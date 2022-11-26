@@ -97,13 +97,13 @@
                 <h3>分类</h3>
                 <div class="list-group">
                   <a href="{% url "main:lost" %}" class="list-group-item">全部<span class="badge">{{ all }}</span></a>
-                  <a href="{% url "main:lost_card" %}" class="list-group-item">校园卡<span class="badge">{{ card }}</span></a>
-                  <a href="{% url "main:lost_book" %}" class="list-group-item">书籍<span class="badge">{{ book }}</span></a>
-                  <a href="{% url "main:lost_elec" %}" class="list-group-item">电子产品<span class="badge">{{ elec }}</span></a>
-                  <a href="{% url "main:lost_study" %}" class="list-group-item">学习用品<span class="badge">{{ study }}</span></a>
-                  <a href="{% url "main:lost_live" %}" class="list-group-item">生活用品<span class="badge">{{ live }}</span></a>
-                  <a href="{% url "main:lost_val" %}" class="list-group-item">贵重物品<span class="badge">{{ val }}</span></a>
-                  <a href="{% url "main:lost_other" %}" class="list-group-item">其他<span class="badge">{{ other }}</span></a>
+                  <a href="{% url "main:lost" %}?type=card" class="list-group-item">校园卡<span class="badge">{{ card }}</span></a>
+                  <a href="{% url "main:lost" %}?type=book" class="list-group-item">书籍<span class="badge">{{ book }}</span></a>
+                  <a href="{% url "main:lost" %}?type=elec" class="list-group-item">电子产品<span class="badge">{{ elec }}</span></a>
+                  <a href="{% url "main:lost" %}?type=study" class="list-group-item">学习用品<span class="badge">{{ study }}</span></a>
+                  <a href="{% url "main:lost" %}?type=live" class="list-group-item">生活用品<span class="badge">{{ live }}</span></a>
+                  <a href="{% url "main:lost" %}?type=val" class="list-group-item">贵重物品<span class="badge">{{ val }}</span></a>
+                  <a href="{% url "main:lost" %}?type=other" class="list-group-item">其他<span class="badge">{{ other }}</span></a>
                 </div>
             </div>
 

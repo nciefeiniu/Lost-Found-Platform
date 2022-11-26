@@ -55,7 +55,7 @@ ROOT_URLCONF = 'losthub.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [os.path.join(BASE_DIR, 'templates')],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -74,12 +74,26 @@ WSGI_APPLICATION = 'losthub.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/2.2/ref/settings/#databases
 
+
+# 如果你想用sqlite，就不用改，如果你想用mysql
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
         'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
     }
 }
+
+# 这是 Mysql的配置
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.mysql',
+#         'NAME': 'competition',  # 数据库名
+#         'HOST': '127.0.0.1',
+#         'PASSWORD': '123456',
+#         'PORT': 3306,
+#         'USER': 'root',
+#     }
+# }
 
 
 # Password validation
@@ -119,3 +133,4 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/2.2/howto/static-files/
 
 STATIC_URL = '/static/'
+STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static')]

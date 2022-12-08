@@ -14,6 +14,10 @@ def home(request):
     return render(request, "home.html")
 
 
+def index(request):
+    return render(request, 'school_index.html')
+
+
 # 渲染lost
 def lost(request):
     book_amount_lost = 0

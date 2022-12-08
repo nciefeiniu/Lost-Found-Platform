@@ -7,7 +7,7 @@ app_name = "main"
 
 # 处理链接跳转的函数写在views.py中
 urlpatterns = [
-    path("", views.lost, name="home"),  # 主页
+    path("", views.index, name="home"),  # 主页
     path("lost/", views.lost, name="lost"),  # 寻物信息的页面
     path("found/", views.found, name="found"),  # 捡到物品信息的页面
     path("found_card/", views.found_card, name="found_card"),

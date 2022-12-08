@@ -2,7 +2,7 @@
     margin-bottom: 2px;
 }
 .navbar-inverse{
-    background: #000;
+    background: gray;
 }
 .navbar-right{
     margin-top: 8px;
@@ -20,11 +20,11 @@
 }
 .navbar-inverse .navbar-nav>li>a.active{
     color: black;
-    background: rgb(255, 144, 1);
+    background: gray;
 }
 .navbar-inverse .navbar-nav>li>a:hover{
     color: black;
-    background: rgb(255, 144, 1);
+    background: gray;
 }
 .navbar-brand{
     padding: 2px;

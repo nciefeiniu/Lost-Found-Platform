@@ -26,7 +26,7 @@
 .typebar{
   margin-top: 10px;
   padding-top: 2px;
-  background: rgb(255, 180, 0);
+  background: floralwhite;
   color: #000;
   border-radius: 4px;
 }
@@ -35,7 +35,7 @@
 }
 .left-part .list-group-item{
   text-align: left;
-  background: rgb(255, 180, 0, 0.3);
+  background: skyblue;
   color:#000;
   border: 1px solid #444;
   font-size: 16px;
